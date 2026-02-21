@@ -16,7 +16,7 @@
 # Elastic IP for the NAT Gateway
 resource "aws_eip" "eip_natgw" {
   tags = {
-    Name = "homely-test-eip-natgw"
+    Name = "home-test-eip-natgw"
   }
   depends_on = [aws_internet_gateway.igw]
 }
@@ -26,7 +26,7 @@ resource "aws_nat_gateway" "natgateway" {
   allocation_id = aws_eip.eip_natgw.id
   subnet_id     = aws_subnet.public_subnets[0].id
   tags = {
-    Name = "homely-test-natgw"
+    Name = "home-test-natgw"
   }
   depends_on = [aws_internet_gateway.igw]
 }

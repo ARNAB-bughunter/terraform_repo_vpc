@@ -154,9 +154,9 @@ variable "private_ec2_db_volume_size" {
 variable "sqs_fifo_queue_names" {
   type = list(string)
   default = [
-    "homely-xlrt-request.fifo",
-    "homely-xlrt-state-change-duplicate.fifo",
-    "xlrt-homely-test-response.fifo",
-    "xlrt-homely-test-state-change.fifo"
+    "home-xlrt-request.fifo",
+    "home-xlrt-state-change-duplicate.fifo",
+    "xlrt-home-test-response.fifo",
+    "xlrt-home-test-state-change.fifo"
   ]
 }

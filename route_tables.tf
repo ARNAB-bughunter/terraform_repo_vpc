@@ -23,7 +23,7 @@ resource "aws_route_table" "public_rt" {
   }
 
   tags = {
-    Name = "homely-test-public-rt"
+    Name = "home-test-public-rt"
   }
 }
 
@@ -44,7 +44,7 @@ resource "aws_route_table" "private_rt" {
   }
 
   tags = {
-    Name = "homely-test-private-rt"
+    Name = "home-test-private-rt"
   }
 }
 
@@ -60,6 +60,6 @@ resource "aws_default_route_table" "main_rt" {
   default_route_table_id = aws_vpc.main.default_route_table_id
 
   tags = {
-    Name = "homely-main-rt"
+    Name = "home-main-rt"
   }
 }

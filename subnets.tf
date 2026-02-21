@@ -22,7 +22,7 @@ resource "aws_subnet" "public_subnets" {
 
 
   tags = {
-    Name = "homely-test-public-subnet ${count.index + 1}"
+    Name = "home-test-public-subnet ${count.index + 1}"
   }
 }
 
@@ -37,6 +37,6 @@ resource "aws_subnet" "private_subnets" {
   availability_zone = var.private_subnet_az
 
   tags = {
-    Name = "homely-test-private-subnet ${count.index + 1}"
+    Name = "home-test-private-subnet ${count.index + 1}"
   }
 }

@@ -10,6 +10,6 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "homely-test-igw"
+    Name = "home-test-igw"
   }
 }
